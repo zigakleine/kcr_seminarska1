@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Izposojevalnica Avtomobilov</title>
+    <link rel = "stylesheet" href = "./mainPage.css"/>
+    <link rel = "stylesheet" href = "../../node_modules/materialize-css/dist/css/materialize.min.css"/>
+</head>
+<body>
+    <nav>
+        <div class="nav-wrapper #ef5350 red lighten-1">
+            <a href="" class="brand-logo">Izposojevalnica Avtomobilov</a>
+        </div>
+    </nav>
+    <div class="custom-margin-1 custom-padding-1 z-depth-1">
+      <div class="row">
+        <div>
+          <div class="row">
+            <div class='col s6'>   
+              <label>Dan prevzema</label>     
+              <input type="text" class="datepicker" id="dateFrom">
+            </div>
+
+            <div class='col s6'> 
+              <label >Dan vračila</label>
+              <input type="text" class="datepicker" id="dateTo">
+  
+            </div>
+
+          </div>
+          <div class="row">
+            <div class='col s3 input-field'>    
+
+              <select id="locationFrom">
+                <option value="Ljubljana" selected>Ljubljana</option>
+                <option value="Maribor">Maribor</option>
+                <option value="Celje">Celje</option>
+              </select>
+              <label>Lokacija prevzema</label>    
+            </div>
+            <div class='col s3 input-field'>  
+
+              <select id="locationTo">
+                <option value="Ljubljana" selected>Ljubljana</option>
+                <option value="Maribor">Maribor</option>
+                <option value="Celje">Celje</option>
+              </select>
+              <label>Lokacija vračila</label>    
+            </div>
+  
+            <div class='col s3 valign-wrapper'> 
+              <label class="center-align">
+                <input type="checkbox" id="isDriverYoung" onclick="updateResults()"/>
+                <span>Voznik mlajši od 25 let</span>
+              </label>
+            </div>
+            <div class='col s3'> 
+              <button class="waves-effect waves-light btn-large right #e57373 red lighten-1" id="searchButton" onclick="searchButtonPressed()">Išči</button>
+            </div>
+
+          </div>   
+        </div>           
+      </div>
+    </div>
+
+
+    <div id="not-searched-yet" class="custom-margin-1 custom-padding-1 z-depth-1 teal-text text-darken-4  teal lighten-4">
+      <p class="center-align">Pričnite z uporabo aplikacije s klikom na gumb "Išči"</p>
+    </div>
+
+    <div class="custom-margin-1" id="filters-results">
+      <div class="row">
+        <div class="col s2 z-depth-1">
+          <div class="custom-margin-2 ">
+            <div>
+              <p>Motor:</p>
+              <ul>
+                <li><label><input type="checkbox" id="engine_bencinski" onclick="updateResults()"/><span>Bencinski</span></label></li>
+                <li><label><input type="checkbox" id="engine_dizelski" onclick="updateResults()"/><span>Dizelski</span></label></li>
+              </ul>
+            </div>
+            <div>
+              <p>Menjalnik:</p>
+              <ul>
+                <li><label><input type="checkbox" id="gearbox_ročni" onclick="updateResults()"/><span>Ročni</span></label></li>
+                <li><label><input type="checkbox" id="gearbox_avtomatski" onclick="updateResults()"/><span>Avtomatski</span></label></li>
+              </ul>
+            </div>
+            <div>
+              <p>Velikost vozila:</p>
+              <ul>
+                <li><label><input type="checkbox" id="size_majhno" onclick="updateResults()"/><span>Majhno</span></label></li>
+                <li><label><input type="checkbox" id="size_srednje veliko" onclick="updateResults()"/><span>Srednje veliko</span></label></li>
+                <li><label><input type="checkbox" id="size_veliko" onclick="updateResults()"/><span>Veliko</span></label></li>
+              </ul>
+            </div>
+            <div> 
+              <!-- ["Fiat", "Hyundai", "Renault", "Volkswagen", "Peugeot", "Mercedes-Benz", "Skoda", "Opel"] -->
+              <p>Znamka:</p>
+              <ul>
+                <li><label><input type="checkbox" id="manufacturer_Fiat" onclick="updateResults()"/><span>Fiat</span></label></li>
+                <li><label><input type="checkbox" id="manufacturer_Hyundai" onclick="updateResults()"/><span>Hyundai</span></label></li>
+                <li><label><input type="checkbox" id="manufacturer_Renault" onclick="updateResults()"/><span>Renault</span></label></li>
+                <li><label><input type="checkbox" id="manufacturer_Volkswagen" onclick="updateResults()"/><span>Volkswagen</span></label></li>
+                <li><label><input type="checkbox" id="manufacturer_Peugeot" onclick="updateResults()"/><span>Peugeot</span></label></li>
+                <li><label><input type="checkbox" id="manufacturer_Mercedes-Benz" onclick="updateResults()"/><span>Mercedes-Benz</span></label></li>
+                <li><label><input type="checkbox" id="manufacturer_Skoda" onclick="updateResults()"/><span>Skoda</span></label></li>
+                <li><label><input type="checkbox" id="manufacturer_Opel" onclick="updateResults()"/><span>Opel</span></label></li>
+              </ul>
+            </div>
+        
+          </div>
+        </div>
+        <div class="col s10">
+          <!-- page content  -->
+          <div id="no-results-found" class="custom-margin-1 custom-padding-1 z-depth-1 red-text text-darken-4  red lighten-4">
+            <p class="center-align" >Za trenutno poizvedbo ni bilo mogoče najti rezultatov. Prosimo, poskusite spremeniti parametre.</p>
+          </div>
+
+          <div id="cant-rent-for-less-than-one-day" class="custom-margin-1 custom-padding-1 z-depth-1 red-text text-darken-4  red lighten-4">
+            <p class="center-align" >Izposoja avomobila ni mogoča za manj kot en dan. Prosimo poskusite spremeniti parametra dni izposoje in vračila. </p>
+          </div>
+
+          <ul class="custom-list-margin" id="carInfoList">
+            
+          </ul>
+        </div>
+      </div>
+    </div>
+
+    <footer class="page-footer #ef5350 red lighten-1">
+      <div class="container">
+
+      </div>
+      <div class="footer-copyright">
+        <div class="container">
+        © 2021 Izposojevalnica Avtomobilov
+     
+      </div>
+    </footer>
+    <script src="../../node_modules/materialize-css/dist/js/materialize.min.js"></script>
+    <script src="./mainPage.js"></script>
+</body>
+</html>

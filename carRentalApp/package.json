@@ -1,0 +1,22 @@
+{
+  "name": "carrentalapp",
+  "productName": "Izposojevalnica avtomobilov",
+  "version": "1.0.0",
+  "description": "Izposojevalnica avtomobilov",
+  "main": "main.js",
+  "scripts": {
+    "start": "electron .",
+    "package-mac": "electron-packager . --overwrite --platform=darwin --arch=x64 --icon=assets/icons/mac/icon.icns --prune=true --out=release-builds",
+    "package-win": "electron-packager . car-rental-app --overwrite --asar=true --platform=win32 --arch=ia32 --icon=assets/icons/win/icon.ico --prune=true --out=release-builds --version-string.CompanyName=CE --version-string.FileDescription=CE --version-string.ProductName=\"Izposojevalnica avtomobilov\"",
+    "package-linux": "electron-packager . car-rental-app --overwrite --asar=true --platform=linux --arch=x64 --icon=assets/icons/png/icon.png --prune=true --out=release-builds"
+  },
+  "author": "Žiga Kleine",
+  "license": "MIT",
+  "devDependencies": {
+    "electron": "^16.0.2",
+    "electron-packager": "^15.4.0"
+  },
+  "dependencies": {
+    "materialize-css": "^1.0.0"
+  }
+}

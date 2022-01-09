@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title id="title">Izposojevalnica Avtomobilov</title>
+    <link rel = "stylesheet" href = "./rentCarStage1.css"/>
+    <link rel = "stylesheet" href = "../../node_modules/materialize-css/dist/css/materialize.min.css"/>
+</head>
+<body>
+    <nav>
+        <div class="nav-wrapper #ef5350 red lighten-1">
+            <a href="" class="brand-logo">Izposojevalnica Avtomobilov</a>
+        </div>
+    </nav>
+    <div class="custom-margin-1 custom-padding-1">
+        <div class="row">
+            <div class="col s12">
+                <div class="">
+                    <nav>
+                        <div class="nav-wrapper">
+                            <div class="col s12">
+                                <a href="" class=" white-text">Osebni podatki<span> > </span> </a>
+                                <a href="" class=" red-text text-lighten-3">Plačilo<span> > </span></a>
+                                <a href="" class=" red-text text-lighten-3">Zaključeno</a>
+                            </div>
+                        </div>
+                    </nav>
+                </div>
+            </div>
+        </div>  
+    </div>  
+            
+    <div class="custom-margin-1 custom-padding-1">
+        <div class="row">
+        <div class="col s9">
+                <div class="z-depth-1 custom-padding-1">
+                    <div class="row">
+                        <div class="col s12">
+                            <p>Zavarovanje:</p>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col s12">
+                            <label>
+                                <input type="checkbox" id="insurance" onclick="insuranceCheckboxSelected()"/>
+                                <span>Dodaj zavarovanje</span>
+                            </label>
+                              
+                        </div>
+                    </div>
+
+                    <div class="row">
+                        <div class="col s12">
+                            <p>Osebni podatki:</p>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="input-field col s6">
+                            <input  id="first-name" type="text">
+                            <label for="first-name">Ime</label>
+                        </div>
+                        <div class="input-field col s6">
+                            <input id="last-name" type="text">
+                            <label for="last-name">Priimek</label>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="input-field col s12">
+                            <input id="age" type="number">
+                            <label for="age">Starost</label>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="input-field col s12">
+                            <input id="license-age" type="number">
+                            <label for="license-age">Koliko let imate izpit?</label>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col s12">
+                            <p>Naslov:</p>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="input-field col s12">
+                            <input id="address" type="text">
+                            <label for="address">Naslov</label>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="input-field col s6">
+                            <input  id="zip-code" type="number">
+                            <label for="zip-code">Poštna Številka</label>
+                        </div>
+                        <div class="input-field col s6">
+                            <input id="city" type="text">
+                            <label for="city">Kraj</label>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="input-field col s12">
+                            <input id="country" type="text">
+                            <label for="country">Država/Regija</label>
+                        </div>
+                    </div>
+
+                    <div class="row">
+                        <div class="col s12">
+                            <p>Kontakt:</p>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="input-field col s12">
+                            <input id="email" type="email">
+                            <label for="email">E-naslov</label>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="input-field col s12">
+                            <input id="phone" type="text">
+                            <label for="phone">Telefon</label>
+                        </div>
+                    </div>
+        
+                </div>
+            </div>
+            <div class="col s3">
+                <div class="z-depth-1 custom-padding-1" id="to-insert-div">
+
+                </div>
+
+            </div>
+        </div>
+    </div>
+    <div class="custom-margin-1 custom-padding-1">
+        <div class="row">
+            <div class="col s12">
+                <div class="">
+                    <div class="row">
+                        <div class="col s6">
+                            <button class="waves-effect waves-light left btn-large #e57373 red lighten-1" disabled>Nazaj</button>
+                        </div>
+                        <div class="col s6">
+                            <button class="waves-effect waves-light right btn-large #e57373 red lighten-1" onclick="goToRentCarStageTwo()">Naprej</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>  
+    </div>
+    <footer class="page-footer #ef5350 red lighten-1">
+        <div class="container">
+  
+        </div>
+        <div class="footer-copyright">
+          <div class="container">
+          © 2021 Izposojevalnica Avtomobilov
+       
+        </div>
+    </footer>
+
+    <script src="../../node_modules/materialize-css/dist/js/materialize.min.js"></script>
+    <script src="./rentCarStage1.js"></script>
+</body>
+</html>

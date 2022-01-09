@@ -1,0 +1,31 @@
+.custom-margin-1 {
+    margin: 10px 10px; 
+
+}
+
+.custom-padding-1 {
+    padding: 10px 10px !important; 
+}
+
+.custom-margin-2 {
+    margin: 2px 5px; 
+
+}
+
+.custom-list-margin{
+    margin-top: 0px !important;
+}
+
+.custom-card-margin{
+    margin-top: 0px !important;
+}
+
+body {
+    display: flex;
+    min-height: 100vh;
+    flex-direction: column;
+  }
+
+  main {
+    flex: 1 0 auto;
+  }

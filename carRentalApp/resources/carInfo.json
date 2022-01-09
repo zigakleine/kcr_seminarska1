@@ -1,0 +1,277 @@
+{
+    "cars": [
+
+
+        {
+            "id": 0,
+            "manufacturer": "Fiat",
+            "model": "Panda",
+            "size": "majhno",
+            "gearbox": "ročni",
+            "engine": "bencinski",
+            "location": "Ljubljana",
+            "imgName": "panda.jpg",
+            "pricePerDay": 25
+        },
+        {
+            "id": 1,
+            "manufacturer": "Hyundai",
+            "model": "i20",
+            "size": "majhno",
+            "gearbox": "ročni",
+            "engine": "bencinski",
+            "location": "Ljubljana",
+            "imgName": "i20.jpg",
+            "pricePerDay": 27
+        },
+        {
+            "id": 2,
+            "manufacturer": "Renault",
+            "model": "Clio",
+            "size": "majhno",
+            "gearbox": "avtomatski",
+            "engine": "dizelski",
+            "location": "Ljubljana",
+            "imgName": "clio.jpg",
+            "pricePerDay": 28
+
+        },
+        {
+            "id": 3,
+            "manufacturer": "Hyundai",
+            "model": "i30",
+            "size": "srednje veliko",
+            "gearbox": "ročni",
+            "engine": "bencinski",
+            "location": "Ljubljana",
+            "imgName": "i30.jpg",
+            "pricePerDay": 33
+
+        },
+        {
+            "id": 4,
+            "manufacturer": "Volkswagen",
+            "model": "Golf",
+            "size": "srednje veliko",
+            "gearbox": "ročni",
+            "engine": "dizelski",
+            "location": "Ljubljana",
+            "imgName": "golf.jpg",
+            "pricePerDay": 34
+
+        },
+        {
+            "id": 5,
+            "manufacturer": "Peugeot",
+            "model": "308",
+            "size": "srednje veliko",
+            "gearbox": "avtomatski",
+            "engine": "bencinski",
+            "location": "Ljubljana",
+            "imgName": "308.jpg",
+            "pricePerDay": 42
+        },
+        {
+            "id": 6,
+            "manufacturer": "Mercedes-Benz",
+            "model": "GLA",
+            "size": "veliko",
+            "gearbox": "avtomatski",
+            "engine": "bencinski",
+            "location": "Ljubljana",
+            "imgName": "gla.jpg",
+            "pricePerDay": 48
+        },
+        {
+            "id": 7,
+            "manufacturer": "Skoda",
+            "model": "Octavia",
+            "size": "veliko",
+            "gearbox": "ročni",
+            "engine": "dizelski",
+            "location": "Ljubljana",
+            "imgName": "octavia.jpg",
+            "pricePerDay": 48
+        },
+        {
+            "id": 8,
+            "manufacturer": "Opel",
+            "model": "Insignia",
+            "size": "veliko",
+            "gearbox": "avtomatski",
+            "engine": "bencinski",
+            "location": "Ljubljana",
+            "imgName": "insignia.jpg",
+            "pricePerDay": 56
+        },
+        {
+            "id": 9,
+            "manufacturer": "Mercedes-Benz",
+            "model": "C-Class",
+            "size": "veliko",
+            "gearbox": "avtomatski",
+            "engine": "dizelski",
+            "location": "Ljubljana",
+            "imgName": "cclass.jpg",
+            "pricePerDay": 86
+        },
+
+ 
+
+
+
+        {
+            "id": 10,
+            "manufacturer": "Hyundai",
+            "model": "i20",
+            "size": "majhno",
+            "gearbox": "ročni",
+            "engine": "bencinski",
+            "location": "Maribor",
+            "imgName": "i20.jpg",
+            "pricePerDay": 27
+        },
+        {
+            "id": 11,
+            "manufacturer": "Renault",
+            "model": "Clio",
+            "size": "majhno",
+            "gearbox": "avtomatski",
+            "engine": "dizelski",
+            "location": "Maribor",
+            "imgName": "clio.jpg",
+            "pricePerDay": 28
+
+        },
+        {
+            "id": 12,
+            "manufacturer": "Hyundai",
+            "model": "i30",
+            "size": "srednje veliko",
+            "gearbox": "ročni",
+            "engine": "bencinski",
+            "location": "Maribor",
+            "imgName": "i30.jpg",
+            "pricePerDay": 33
+
+        },
+        {
+            "id": 13,
+            "manufacturer": "Volkswagen",
+            "model": "Golf",
+            "size": "srednje veliko",
+            "gearbox": "ročni",
+            "engine": "dizelski",
+            "location": "Maribor",
+            "imgName": "golf.jpg",
+            "pricePerDay": 34
+
+        },
+        {
+            "id": 14,
+            "manufacturer": "Peugeot",
+            "model": "308",
+            "size": "srednje veliko",
+            "gearbox": "avtomatski",
+            "engine": "bencinski",
+            "location": "Maribor",
+            "imgName": "308.jpg",
+            "pricePerDay": 42
+        },
+        {
+            "id": 15,
+            "manufacturer": "Mercedes-Benz",
+            "model": "GLA",
+            "size": "veliko",
+            "gearbox": "avtomatski",
+            "engine": "bencinski",
+            "location": "Maribor",
+            "imgName": "gla.jpg",
+            "pricePerDay": 48
+        },
+        {
+            "id": 16,
+            "manufacturer": "Skoda",
+            "model": "Octavia",
+            "size": "veliko",
+            "gearbox": "ročni",
+            "engine": "dizelski",
+            "location": "Maribor",
+            "imgName": "octavia.jpg",
+            "pricePerDay": 48
+        },
+        {
+            "id": 17,
+            "manufacturer": "Opel",
+            "model": "Insignia",
+            "size": "veliko",
+            "gearbox": "avtomatski",
+            "engine": "bencinski",
+            "location": "Maribor",
+            "imgName": "insignia.jpg",
+            "pricePerDay": 56
+        },
+
+
+        
+
+        {
+            "id": 18,
+            "manufacturer": "Fiat",
+            "model": "Panda",
+            "size": "majhno",
+            "gearbox": "ročni",
+            "engine": "bencinski",
+            "location": "Celje",
+            "imgName": "panda.jpg",
+            "pricePerDay": 25
+        },
+        {
+            "id": 20,
+            "manufacturer": "Renault",
+            "model": "Clio",
+            "size": "majhno",
+            "gearbox": "avtomatski",
+            "engine": "dizelski",
+            "location": "Celje",
+            "imgName": "clio.jpg",
+            "pricePerDay": 28
+
+        },
+        {
+            "id": 21,
+            "manufacturer": "Peugeot",
+            "model": "308",
+            "size": "srednje veliko",
+            "gearbox": "avtomatski",
+            "engine": "bencinski",
+            "location": "Celje",
+            "imgName": "308.jpg",
+            "pricePerDay": 42
+        },
+        {
+            "id": 22,
+            "manufacturer": "Mercedes-Benz",
+            "model": "GLA",
+            "size": "veliko",
+            "gearbox": "avtomatski",
+            "engine": "bencinski",
+            "location": "Celje",
+            "imgName": "gla.jpg",
+            "pricePerDay": 48
+        },
+        {
+            "id": 23,
+            "manufacturer": "Skoda",
+            "model": "Octavia",
+            "size": "veliko",
+            "gearbox": "ročni",
+            "engine": "dizelski",
+            "location": "Celje",
+            "imgName": "octavia.jpg",
+            "pricePerDay": 48
+        }
+
+    ]
+    
+}
